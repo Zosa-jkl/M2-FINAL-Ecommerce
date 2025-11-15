@@ -1,0 +1,15 @@
+WEBSITE UPDATE!!!!!
+Next thing to do:
+
+>when user toggles a product it prompts "product added to cart/bag"
+>make Cart page
+>@ cart page make :
+
+	>Quantity
+	>price
+	>select
+	>buy button
+	>trash or cancel
+	>mode of payment
+	>mode of delivery: pickup or deliver
+	>address

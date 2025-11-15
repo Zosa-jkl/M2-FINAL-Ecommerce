@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products - Essential.</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+<body>
+    <div class="header1">
+    <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Assets/img/logo2.png" alt="Essentials Logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html" class="cart-icon-container"> 
+                    <img src="Assets/img/bag.png" width="30px" height="30px">
+                    <span id="cart-count">0</span>
+                </a>
+                <img src="Assets/img/burger-bar.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <div class = "small-container">  
+        <div class="row row-2">
+            <h2>Products</h2>
+            <select>
+                <option>All Products</option>
+                <option>Pantry Supplies</option>
+                <option>House-Cleaning Supplies</option>
+                <option>Personal Care</option>
+            </select>
+        </div>
+
+      <div class="product-category personal-care">  
+        <h2 class="title1" id="personal-care-section">Personal Care</h2>
+        <div class="row">
+            <div class="col-4" 
+                    data-name="Deodorant" 
+                    data-price="141.00" 
+                    data-image="Assets/img/personal-care-products/DEODORANT.jpeg">
+                    <div class="box">
+                <img src="Assets/img/personal-care-products/DEODORANT.jpeg">
+                    </div>
+                <h4>Deodorant</h4>
+                <p>₱141.00</p>
+                <button class="btn add-to-cart">Add to Bag</button> 
+            </div>
+            <div class="col-4"
+                    data-name="Shampoo"
+                    data-price="199.00"
+                    data-image="Assets/img/personal-care-products/shampoo.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/personal-care-products/shampoo.jpeg"> 
+                    </div>
+                <h4>Shampoo</h4>
+                <p>₱199.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Mouthwash"
+                    data-price="249.00"
+                    data-image="Assets/img/personal-care-products/Mouthwash.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/personal-care-products/Mouthwash.jpeg"> 
+                    </div>
+                <h4>Mouthwash</h4>
+                <p>₱249.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Loofah"
+                    data-price="99.00"
+                    data-image="Assets/img/personal-care-products/Loofah.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/personal-care-products/Loofah.jpeg"> 
+                    </div>
+                <h4>Loofah</h4>
+                <p>₱99.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Bath Soap"
+                    data-price="89.00"
+                    data-image="Assets/img/personal-care-products/Bath Soap.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/personal-care-products/Bath Soap.jpeg"> 
+                    </div>
+                <h4>Bath Soap</h4>
+                <p>₱89.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Razor"
+                    data-price="39.00"
+                    data-image="Assets/img/personal-care-products/Razor (Gillette).jpeg">
+                    <div class="box">
+                 <img src="Assets/img/personal-care-products/Razor (Gillette).jpeg"> 
+                    </div>
+                <h4>Razor</h4>
+                <p>₱39.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Toothpaste"
+                    data-price="59.00"
+                    data-image="Assets/img/personal-care-products/Toothpaste.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/personal-care-products/Toothpaste.jpeg"> 
+                    </div>
+                <h4>Toothpaste</h4>
+                <p>₱59.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Toothbrush"
+                    data-price="39.00"
+                    data-image="Assets/img/personal-care-products/ToothBrush.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/personal-care-products/ToothBrush.jpeg"> 
+                    </div>
+                <h4>Toothbrush</h4>
+                <p>₱39.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="product-category pantry-supplies">
+        <h2 class="title1" id="pantry-supply-section">Pantry Supplies</h2>
+        <div class="row">
+            <div class="col-4"
+                    data-name="Brown Sugar"
+                    data-price="299.00"
+                    data-image="Assets/img/Pantry suplies/Brown Sugar.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/Pantry suplies/Brown Sugar.jpeg"> 
+                    </div>
+                <h4>Brown Sugar</h4>
+                <p>₱299.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="White Rice"
+                    data-price="249.00"
+                    data-image="Assets/img/Pantry suplies/White Rice.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/Pantry suplies/White Rice.jpeg"> 
+                    </div>
+                <h4>White Rice</h4>
+                <p>₱249.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="All-Purpose Flour"
+                    data-price="200.00"
+                    data-image="Assets/img/Pantry suplies/All-Purpose Flour.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/Pantry suplies/All-Purpose Flour.jpeg"> 
+                    </div>
+                <h4>All-Purpose Flour</h4>
+                <p>₱200.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Oat Milk"
+                    data-price="160.00"
+                    data-image="Assets/img/Pantry suplies/Oat Milk.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/Pantry suplies/Oat Milk.jpeg"> 
+                    </div>
+                <h4>Oat Milk</h4>
+                <p>₱160.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Brown Eggs"
+                    data-price="189.00"
+                    data-image="Assets/img/Pantry suplies/Brown egg carton with 6 eggs.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/Pantry suplies/Brown egg carton with 6 eggs.jpeg"> 
+                    </div>
+                <h4>Brown Eggs</h4>
+                <p>₱189.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Fresh Whole Milk"
+                    data-price="109.00"
+                    data-image="Assets/img/Pantry suplies/Fresh Whole Milk.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/Pantry suplies/Fresh Whole Milk.jpeg"> 
+                    </div>
+                <h4>Fresh Whole Milk</h4>
+                <p>₱109.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Cooking Corn Oil"
+                    data-price="79.00"
+                    data-image="Assets/img/Pantry suplies/Cooking Corn Oil.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/Pantry suplies/Cooking Corn Oil.jpeg"> 
+                    </div>
+                <h4>Cooking Corn Oil</h4>
+                <p>₱79.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="product-category house-cleaning-supplies">
+        <h2 class="title1" id="cleaning-supply-section">House-Cleaning Supplies</h2>
+        <div class="row">
+            <div class="col-4"
+                    data-name="Dish Soap"
+                    data-price="119.00"
+                    data-image="Assets/img/cleaning supply/dish Soap.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/cleaning supply/dish Soap.jpeg"> 
+                    </div>
+                <h4>Dish Soap</h4>
+                <p>₱119.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Dish Scrubbing Foam"
+                    data-price="139.00"
+                    data-image="Assets/img/cleaning supply/dish scrubbing pad.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/cleaning supply/dish scrubbing pad.jpeg"> 
+                    </div>
+                <h4>Dish Scrubbing Foam</h4>
+                <p>₱139.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Softener"
+                    data-price="169.00"
+                    data-image="Assets/img/cleaning supply/Liquid Fabric Softener.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/cleaning supply/Liquid Fabric Softener.jpeg">
+                     </div>
+                <h4>Liquid Fabric Softener</h4>
+                <p>₱169.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Liquid Bleach"
+                    data-price="159.00"
+                    data-image="Assets/img/cleaning supply/Liquid Bleach.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/cleaning supply/Liquid Bleach.jpeg">
+                     </div>
+                <h4>Liquid Bleach</h4>
+                <p>₱159.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+            <div class="col-4"
+                    data-name="Detergent Powder"
+                    data-price="130.00"
+                    data-image="Assets/img/cleaning supply/Detergent Powder.jpeg">
+                    <div class="box">
+                 <img src="Assets/img/cleaning supply/Detergent Powder.jpeg">
+                     </div>
+                <h4>Detergent Powder</h4>
+                <p>₱130.00</p>
+                <button class="btn add-to-cart">Add to Bag</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <!-- New row container for content columns -->
+        <div class="row"> 
+            
+            <!-- Column 1: App Info / Logo -->
+            <div class="footer-col footer-info">
+                <h3 class="head">Essentials.</h3>
+                <p>
+                    Your one-stop shop for high-quality, sustainable household and personal care supplies. Simplify your essentials.
+                </p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col footer-links">
+                <h3 class="head">Quick Links</h3>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="Affiliates\index.html">Affiliates</a></li>
+                    <li><a href="https://myaccount.microsoft.com/?ref=MeControl">Return Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Socials -->
+            <div class="footer-col footer-social">
+                <h3 class="head">Connect</h3>
+                <div class="social">
+                    <a href="https://www.facebook.com/jayzos" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/jay_zos/" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Copyright Section -->
+        <div class="copyright-row">
+            <p class="copyright">
+                &copy; Jacob Zosa - All rights Reserved
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

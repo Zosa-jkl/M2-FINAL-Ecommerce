@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential.</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="Assets/img/logo2.png" alt="Essentials Logo">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li> 
+                        <li><a href="products.html">Products</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html" aria-label="View Shopping Cart" class="cart-icon-container">  
+                    <img src="Assets/img/bag.png" width="30px" height="30px">
+                    <span id="cart-count">0</span>
+                </a>
+                <img src="Assets/img/burger-bar.png" class="menu-icon" alt="Menu Toggle Button" onclick="menutoggle()">
+            </div>
+        
+            <div class="row">
+                <div class="col-2">
+                    <h1>Goods, Delivered.<br>Skip the list.</h1>
+                    <p>Solution for your Daily Essentials</p>
+                    <a href="products.html" class="btn">Shop Now &raquo;</a> 
+                </div>
+                <div class="col-2">
+                    <img src="Assets/img/guyhandingouthairblower-removebg-preview.png" alt="A person handing out a hairblower, symbolizing delivery"> 
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="categories">
+        <div class="small-container">
+            <h2 class="title">Product Categories</h2>
+            <div class="row">
+                <div class="col-3">
+                    <a href="products.html#personal-care-section"> 
+                        <img src="Assets/img/3.png" alt="Personal Care Products" class="personal-care"> 
+                        <h2>Personal Care</h2>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="products.html#pantry-supply-section"> 
+                        <img src="Assets/img/2.png" alt="Pantry Supplies" class="pantry-supply"> 
+                        <h2>Pantry Supplies</h2>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="products.html#cleaning-supply-section"> 
+                        <img src="Assets/img/1.png" alt="House-Cleaning Supplies" class="house-supply"> 
+                        <h2>House-Cleaning Supplies</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row"> 
+                
+                <div class="footer-col footer-info">
+                    <h3 class="head">Essentials.</h3>
+                    <p>
+                        Your one-stop shop for high-quality, sustainable household and personal care supplies. Simplify your essentials.
+                    </p>
+                </div>
+
+                <div class="footer-col footer-links">
+                    <h3 class="head">Quick Links</h3>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="Affiliates\index.html">Affiliates</a></li>
+                        <li><a href="https://myaccount.microsoft.com/?ref=MeControl">Return Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-social">
+                    <h3 class="head">Connect</h3>
+                    <div class="social">
+                        <a href="https://www.facebook.com/jayzos" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.instagram.com/jay_zos/" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="copyright-row">
+                <p class="copyright">
+                    &copy; Jacob Zosa - All rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

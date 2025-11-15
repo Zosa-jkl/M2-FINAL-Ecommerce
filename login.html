@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account - Login / Register</title>
+        <!-- Link to external CSS -->
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+<body>
+    <div class="header1">
+    <div class="container">
+        <!-- NAVBAR START -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="Assets/img/logo2.png" alt="Essentials Logo" width="260px"> 
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html" class="cart-icon-container"> 
+                    <img src="Assets/img/bag.png" width="30px" height="30px">
+                    <span id="cart-count">0</span>
+                </a>
+            <!-- Calls menutoggle function in script.js -->
+            <img src="Assets/img/burger-bar.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <!-- NAVBAR END -->
+    </div>
+    </div>
+    <!-- ACCOUNT PAGE CONTENT -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <!-- Image or empty space (Left Side) -->
+                <div class="col-2">
+                    <h1>Manage Your Essentials Account</h1>
+                    <p>Log in to track your orders, manage your preferences, and enjoy a seamless shopping experience.</p>
+                </div>
+                
+                <!-- Form Section (Right Side) -->
+                <div class="col-2 form-column">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <!-- Calls functions in script.js -->
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <!-- Login Form -->
+                        <form id="LoginForm">
+                            <input type="email" id="loginEmail" placeholder="Email" required>
+                            <input type="password" id="loginPassword" placeholder="Password" required>
+                            <button type="submit" class="btn">Login</button>
+                            <a href="#">Forgot Password</a>
+                            <div id="loginMessage" class="form-message"></div>
+                        </form>
+
+                        <!-- Register Form -->
+                        <form id="RegForm">
+                            <input type="text" id="regUsername" placeholder="Username" required>
+                            <input type="email" id="regEmail" placeholder="Email" required>
+                            <input type="password" id="regPassword" placeholder="Password (min 6 chars)" required>
+                            <button type="submit" class="btn">Register</button>
+                            <div id="registerMessage" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER START -->
+    <footer class="footer" id="footer">
+    <div class="container">
+        <div class="row"> 
+            
+            <div class="footer-col footer-info">
+                <h3 class="head">Essentials.</h3>
+                <p>
+                    Your one-stop shop for high-quality, sustainable<br>household and personal care supplies.<br>Simplify your essentials.
+                </p>
+            </div>
+
+            <div class="footer-col footer-links">
+                <h3 class="head">Quick Links</h3>
+                <ul>
+                    <li><a href="login.html">My Account</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-social">
+                <h3 class="head">Connect</h3>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="copyright-row">
+            <p class="copyright">
+                &copy; Jacob Zosa - All rights Reserved
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <!-- LINK FIX: Changed import from login.js to script.js to load toggle functions -->
+    <script src="script.js"></script>
+</body>
+</html>
